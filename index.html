@@ -4,43 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vyshyvanka-Vibes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <!-- > тег буде вкладено ul>li
 * скільки однакових тегів буде додано li*8
 () декілька рівнів вкладеності 
 + між сусідами li>img+h3+p  -->
 
       <!-- (nav>(a>img)+ul>li*4>a)+address>ul>li*4>a -->
-
-      <nav>
-        <a href="./index.html"> <img src="./images/logo.png" alt="logo" /></a>
-        <ul>
-          <li><a href="">About us</a></li>
-          <li><a href="">Our collection </a></li>
-          <li><a href="">Customer Order</a></li>
-          <li><a href="">Testimonials</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
-          <li>
-            <a href="https://www.facebook.com/" target="_blank">facebook</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank">intagram</a>
-          </li>
-          <li><a href="https://www.youtube.com" target="_blank">youtube</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <nav class="header-navigation">
+          <a href="./index.html" class="header-logo">
+            <img src="./images/logo.png" alt="logo"
+          /></a>
+          <ul class="header-nav-list">
+            <li class="nav-list-item">
+              <a href="" class="nav-list-link">About us</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-list-link">Our collection </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-list-link">Customer Order</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-list-link">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul class="address-list">
+            <li class="address-item">
+              <a href="tel:+380684439426" class="address-link address-tel"
+                >+380 (68) 443-94-26</a
+              >
+            </li>
+            <li class="address-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="address-link social-link"
+                >f</a
+              >
+            </li>
+            <li class="address-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="address-link social-link"
+                >i</a
+              >
+            </li>
+            <li class="address-item">
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                class="address-link social-link"
+                >y</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
-        <section>
-            
-        </section>
+      <section></section>
     </main>
 
     <footer></footer>
