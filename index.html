@@ -39,7 +39,7 @@
               <a href="" class="nav-list-link">Our collection </a>
             </li>
             <li class="nav-list-item">
-              <a href="" class="nav-list-link">Customer Order</a>
+              <a href="#order" class="nav-list-link">Customer Order</a>
             </li>
             <li class="nav-list-item">
               <a href="" class="nav-list-link">Testimonials</a>
@@ -83,16 +83,48 @@
     </header>
 
     <main>
-      <section>
-        <h2>
-          Your order is our priority: Personalized approach and quality of
-          service
-        </h2>
-        <form action="">
-          <div><label><input type="text"></label></div>
-          <div><label><input type="email"></label></div>
-          <div><label><textarea name="" id=""></textarea></label></div>
-        </form>
+      <section class="order" id="order">
+        <div class="container">
+          <img src="./images/rectangle.webp" alt="girl" />
+          <h2 class="order-title">
+            Your order is our priority: Personalized approach and quality of
+            service
+          </h2>
+          <form class="oder-form">
+            <div class="order-form-box">
+              <label
+                ><input
+                  type="text"
+                  placeholder="Enter your full name"
+                  class="order-form-input"
+                 pattern=".{2,}"
+                  title="Ім'я може містити лише літери, пробіли або дефіси"
+                  required
+              /></label>
+            </div>
+            <div class="order-form-box">
+              <label
+                ><input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="order-form-input"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Введіть коректну адресу (наприклад, example@mail.com)"
+                  required
+              /></label>
+            </div>
+            <div class="order-form-box">
+              <label>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Comments"
+                  class="order-form-input comment"></textarea>
+              </label>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </main>
 
